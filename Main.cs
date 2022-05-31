@@ -256,10 +256,10 @@ namespace buildBot
                 .DrawImage(images[6], new Point(x: 1260, y: 1100), 1f));
             try
             {
-                Font font = new(SystemFonts.Get("Calibri"),50,FontStyle.Bold);
+                Font font = new(SystemFonts.Get("Arial"),50,FontStyle.Bold);
                 bg.Mutate(x => x.DrawText("@Veebapun", font, Color.LightSkyBlue, new PointF(1270, 1000)));
 
-                Font font1 = new(SystemFonts.Get("Rockwell"), 50);
+                Font font1 = new(SystemFonts.Get("Arial"), 50);
                 bg.Mutate(x => x.DrawText($"{player.playerName}'s {player.charName}", font, Brushes.Solid(Color.White), Pens.Solid(Color.Black, 1), new PointF(800, 5)));
             }
             catch (Exception e)
