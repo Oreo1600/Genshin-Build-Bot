@@ -257,8 +257,8 @@ namespace buildBot
             try
             {
                 FontCollection collection = new();
-                collection.Add("https://github.com/jondot/dotfiles/blob/master/.fonts/calibri.ttf");
-                collection.Add("https://github.com/nex3/wtf-did-pa-do/blob/master/public/fonts/rockwell.ttf");
+                collection.Add("https://cdn.discordapp.com/attachments/916000654227546208/981148475171434536/calibri.ttf");
+                collection.Add("https://cdn.discordapp.com/attachments/916000654227546208/981148839597727775/rockwell.ttf");
                 Font font = new(SystemFonts.Get("Calibri"),50,FontStyle.Bold);
                 bg.Mutate(x => x.DrawText("@Veebapun", font, Color.LightSkyBlue, new PointF(1270, 1000)));
 
