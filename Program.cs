@@ -7,7 +7,7 @@ namespace buildBot
 {
     internal class Program
     {
-        public static string botToken = "5488109467:AAGjshFA9Cq3ujPdMjzTwJPKheuaIvT6sss";
+        public static string botToken = Environment.GetEnvironmentVariable("botToken");
         public static readonly TelegramBotClient botClient = new TelegramBotClient(botToken);
         public static User me = botClient.GetMeAsync().Result;     
         static async Task Main(string[] args)

@@ -17,7 +17,7 @@ namespace buildBot
         public static async Task<Message> sendStart(ITelegramBotClient botClient, Message mess)
         {
             Message reply =
-            await botClient.SendTextMessageAsync(mess.Chat.Id, "Hello, My name is Genshin Builds made by @Veebapun.\nYou can send me all the photos of your character build and i will combine them in one photo.\nPlease Send /help to know how to use me.");
+            await botClient.SendTextMessageAsync(mess.Chat.Id, "Hello, My name is Genshin Character Builder made by @Veebapun.\nYou can send me all the photos of your character build and i will combine them in one photo.\nPlease Send /help to know how to use me.");
             return reply;
         }
         public static async Task<Message> sendHelp(ITelegramBotClient botClient, Message mess)
