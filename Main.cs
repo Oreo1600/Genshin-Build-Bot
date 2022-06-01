@@ -257,12 +257,11 @@ namespace buildBot
             try
             {
                 FontCollection collection = new();
-                collection.Add("https://cdn.discordapp.com/attachments/916000654227546208/981148475171434536/calibri.ttf");
-                collection.Add("https://cdn.discordapp.com/attachments/916000654227546208/981148839597727775/rockwell.ttf");
-                Font font = new(SystemFonts.Get("Calibri"),50,FontStyle.Bold);
+                collection.AddSystemFonts();
+                Font font = new(collection.Get("Calibri"),50,FontStyle.Bold);
                 bg.Mutate(x => x.DrawText("@Veebapun", font, Color.LightSkyBlue, new PointF(1270, 1000)));
 
-                Font font1 = new(SystemFonts.Get("Rockwell"), 50);
+                Font font1 = new(collection.Get("Rockwell"), 50);
                 bg.Mutate(x => x.DrawText($"{player.playerName}'s {player.charName}", font, Brushes.Solid(Color.White), Pens.Solid(Color.Black, 1), new PointF(800, 5)));
             }
             catch (Exception e)
