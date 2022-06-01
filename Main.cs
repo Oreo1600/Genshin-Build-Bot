@@ -258,6 +258,10 @@ namespace buildBot
             {
                 FontCollection collection = new();
                 collection.AddSystemFonts();
+                foreach (var item in collection.Families)
+                {
+                    Console.WriteLine(item);
+                }
                 Font font = new(collection.Get("Calibri"),50,FontStyle.Bold);
                 bg.Mutate(x => x.DrawText("@Veebapun", font, Color.LightSkyBlue, new PointF(1270, 1000)));
 
