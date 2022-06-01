@@ -32,8 +32,8 @@ namespace buildBot
             await botClient.SendDocumentAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980886975181647992/unknown.png", caption: "#5");
             await botClient.SendDocumentAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980887007951736892/unknown.png", caption: "#6");
             await botClient.SendDocumentAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980887025718812742/unknown.png", caption: "#7");
-            await botClient.SendPhotoAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980888073455960104/unknown.png", caption: "Example Part-1");
-            await botClient.SendPhotoAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980888204666347540/unknown.png", caption: "Example Part-2");
+            await botClient.SendPhotoAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980888940556984431/IMG_20220530_231150.jpg", caption: "Example Part-1");
+            await botClient.SendPhotoAsync(mess.Chat.Id, "https://cdn.discordapp.com/attachments/916000654227546208/980888941030957126/IMG_20220530_231202.jpg", caption: "Example Part-2");
             return reply;
         }
         
