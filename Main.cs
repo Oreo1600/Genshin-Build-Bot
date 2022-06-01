@@ -257,7 +257,8 @@ namespace buildBot
             try
             {
                 FontCollection collection = new();
-                collection.AddSystemFonts();
+                collection.Add("path/to/calibri.ttf");
+                collection.Add("path/to/rockwell.ttf");
                 foreach (var item in collection.Families)
                 {
                     Console.WriteLine(item);
