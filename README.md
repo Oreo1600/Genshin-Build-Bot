@@ -7,7 +7,8 @@ Note: Only 16:9 ratio screenshots are compaitable with the bot. If your screensh
 <s>Dont bother with this, better to use shinshin.moe tbh</s>
 
 <h3>Commands:<h3>
-  <code>/start - Check if bot is alive or ded
+  <code>
+    /start - Check if bot is alive or ded
 
     /help - See how the bot works
 
