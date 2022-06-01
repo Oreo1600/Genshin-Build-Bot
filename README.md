@@ -4,6 +4,7 @@ Welcome to my Second Repository.
 
 This bot will crop and combine all your character build screenshot into one image.
 Note: Only 16:9 ratio screenshots are compaitable with the bot. If your screenshot doesn't match the required resolution, It will give an error.
+<s>Dont bother with this, better to use shinshin.moe tbh</s>
 
 <h3>Commands:<h3>
   <code>
@@ -12,6 +13,3 @@ Note: Only 16:9 ratio screenshots are compaitable with the bot. If your screensh
 /build - Start your building process, Parameter - {charName}
   </code>
 
-  <p>
-<s>Dont bother with this, better to use shinshin.moe tbh</s>
-  </p>
