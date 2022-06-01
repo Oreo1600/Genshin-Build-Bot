@@ -8,8 +8,11 @@ Note: Only 16:9 ratio screenshots are compaitable with the bot. If your screensh
 
 <h3>Commands:<h3>
   <code>
-/start - Check if bot is alive or ded
-/help - See how the bot works
-/build - Start your building process, Parameter - {charName}
+
+    /start - Check if bot is alive or ded
+
+    /help - See how the bot works
+
+    /build - Start your building process, Parameter - {charName}
   </code>
 
