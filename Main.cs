@@ -256,18 +256,18 @@ namespace buildBot
                 .DrawImage(images[6], new Point(x: 1260, y: 1100), 1f));
             try
             {
+                byte[] calibribyte = web.DownloadData("https://cdn.discordapp.com/attachments/916000654227546208/981148475171434536/calibri.ttf");
+                byte[] rockwellbyte = web.DownloadData("https://cdn.discordapp.com/attachments/916000654227546208/981148839597727775/rockwell.ttf");
+                MemoryStream[] fonts = new MemoryStream[2] { new MemoryStream(calibribyte),new MemoryStream(rockwellbyte)};
                 FontCollection collection = new();
-                collection.Add("path/to/calibri.ttf");
-                collection.Add("path/to/rockwell.ttf");
-                foreach (var item in collection.Families)
-                {
-                    Console.WriteLine(item);
-                }
+                collection.Add(fonts[0]);
+                collection.Add(fonts[1]);
+
                 Font font = new(collection.Get("Calibri"),50,FontStyle.Bold);
                 bg.Mutate(x => x.DrawText("@Veebapun", font, Color.LightSkyBlue, new PointF(1270, 1000)));
 
-                Font font1 = new(collection.Get("Rockwell"), 50);
-                bg.Mutate(x => x.DrawText($"{player.playerName}'s {player.charName}", font, Brushes.Solid(Color.White), Pens.Solid(Color.Black, 1), new PointF(800, 5)));
+                Font font1 = new(collection.Get("Rockwell"), 50,FontStyle.Bold);
+                bg.Mutate(x => x.DrawText($"{player.playerName}'s {player.charName}", font1, Brushes.Solid(Color.White), Pens.Solid(Color.Black, 1), new PointF(800, 5)));
             }
             catch (Exception e)
             {
