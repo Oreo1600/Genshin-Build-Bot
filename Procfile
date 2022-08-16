@@ -1,1 +1,1 @@
-cd $HOME/heroku_output && ./buildBot
+worker: cd $HOME/heroku_output && ./buildBot
