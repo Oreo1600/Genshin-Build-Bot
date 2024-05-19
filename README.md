@@ -1,5 +1,7 @@
-<h1><b>Genshin Character Build Bot</b></h1>
 
+
+<h1><b>Genshin Character Build Bot</b></h1>
+<h4>Out of Commission</h4>
 Welcome to my Second Repository.
 
 This bot will crop and combine all your character build screenshot into one image.
